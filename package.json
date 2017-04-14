@@ -1,7 +1,7 @@
 {
   "name": "elmhub",
   "version": "1.0.0",
-  "description": "github for Elm repos",
+  "description": "Elm webpack 2 boilerplate",
   "main": "index.js",
   "author": "David Jobe <daavid.jobe@gmail.com>",
   "license": "MIT",
