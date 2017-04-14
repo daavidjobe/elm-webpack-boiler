@@ -1,0 +1,37 @@
+{
+  "name": "elmhub",
+  "version": "1.0.0",
+  "description": "github for Elm repos",
+  "main": "index.js",
+  "author": "David Jobe <daavid.jobe@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "webpack-dev-server --hot --inline",
+    "build": "rm -rf dist && webpack --env production && yarn assets",
+    "assets": " mv dist/*.eot dist/static/css/ && mv dist/*.woff* dist/static/css/ && mv dist/*.svg dist/static/css/ && mv dist/*.ttf dist/static/css/",
+    "reinstall": "rm -rf node_modules && yarn install"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.7.7",
+    "babel-core": "^6.24.1",
+    "babel-loader": "^6.4.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "copy-webpack-plugin": "^4.0.1",
+    "css-loader": "^0.28.0",
+    "elm": "^0.18.0",
+    "elm-hot-loader": "^0.5.4",
+    "elm-webpack-loader": "^4.3.0",
+    "extract-text-webpack-plugin": "^2.1.0",
+    "file-loader": "^0.11.1",
+    "html-webpack-plugin": "^2.28.0",
+    "node-sass": "^4.5.2",
+    "normalize.css": "^6.0.0",
+    "postcss-loader": "^1.3.3",
+    "sass-loader": "^6.0.3",
+    "style-loader": "^0.16.1",
+    "url-loader": "^0.5.8",
+    "webpack": "^2.3.3",
+    "webpack-dev-server": "^2.4.2"
+  }
+}
