@@ -6,8 +6,8 @@
   "author": "David Jobe <daavid.jobe@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "webpack-dev-server --hot --inline",
-    "build": "rm -rf dist && webpack --env production && yarn assets",
+    "start": "webpack-dev-server --hot --inline --config config/webpack.config.babel.js",
+    "build": "rm -rf dist && webpack --env production --config config/webpack.config.babel.js && yarn assets",
     "assets": " mv dist/*.eot dist/static/css/ && mv dist/*.woff* dist/static/css/ && mv dist/*.svg dist/static/css/ && mv dist/*.ttf dist/static/css/",
     "reinstall": "rm -rf node_modules && yarn install",
     "test": "elm test",
