@@ -1,4 +1,4 @@
-## Elm Webpack 2 configuration with sass
+## Elm project seed with Webpack
 
 ### TODOS
 
