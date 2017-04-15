@@ -4,4 +4,3 @@
 
   - Server-side rendering. It is now supported with Elm 0.18
   - Configuration is messy. Refactor
-  - Testing
